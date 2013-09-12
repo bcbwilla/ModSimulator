@@ -7,7 +7,7 @@ import org.bukkit.ChatColor;
 public class MessageGenerator extends WorkGenerator {
 
 	public String generateMessage() {
-		String message = ChatColor.GRAY + "(From";
+		String message = ChatColor.GRAY + "(From ";
 		message = message +  ChatColor.AQUA + super.generateName();
 		message = message +  ChatColor.GRAY + "): ";
 		message = message + ChatColor.WHITE + generateReason();
