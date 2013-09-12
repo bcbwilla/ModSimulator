@@ -1,0 +1,10 @@
+main: net.electronexchange.modsimulator.ModSimulator
+name: ModSimulator
+version: 1.0.0
+author: bcbwilla
+website: electronexchange.net
+description: b a mod
+commands:
+    modsimulator:
+        description: toggles plugin
+        usage: /<command> [on/off]
