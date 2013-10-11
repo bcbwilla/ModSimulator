@@ -12,13 +12,12 @@ public class ModSimulator extends JavaPlugin {
 		getCommand("modsimulator").setExecutor(new ModSimulatorCommand(this));
 	}
 	
-	@SuppressWarnings("deprecation")
 	@Override
 	public void onDisable(){
 		getLogger().info("can u appeal my friend");
 		
 		if(modThread.isAlive()) {
-			modThread.stop();
+			modThread.join();
 		}
 	}
 }
